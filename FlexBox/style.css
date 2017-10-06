@@ -1,0 +1,98 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box; }
+
+html {
+  display: flex;
+  flex-direction: column;
+  font-family: arial, sans-serif;
+  font-size: 30px; }
+
+header,
+nav,
+aside,
+article,
+footer {
+  margin: .4em;
+  padding: 1em; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 1em; }
+
+.wrapper {
+  flex: 1 1 auto;
+  display: flex; }
+
+nav,
+aside {
+  width: 10em; }
+
+article {
+  flex: 1; }
+
+nav {
+  order: -1; }
+
+body {
+  margin: 0; }
+
+header {
+  background-color: #5F021F;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px;
+  color: white; }
+
+nav {
+  background-color: #000080;
+  color: white;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px; }
+
+article {
+  background-color: green;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px; }
+
+aside {
+  background-color: #000080;
+  color: white;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px; }
+
+footer {
+  background-color: #5F021F;
+  color: white;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px; }
+
+/*Changement de média*/
+@media (max-width: 640px) {
+  .wrapper {
+    flex-direction: column; }
+
+  nav,
+  aside {
+    width: auto; }
+
+  nav,
+  aside,
+  article {
+    flex-basis: auto; }
+
+  nav {
+    order: 0; } }
+
+/*# sourceMappingURL=style.css.map */

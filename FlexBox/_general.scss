@@ -1,0 +1,19 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+  display: flex;
+  flex-direction: column;
+  font-family: arial, sans-serif;
+  font-size: 30px;
+}
+
+header,
+nav,
+aside,
+article,
+footer {
+  margin: .4em;
+  padding: 1em;
+}
